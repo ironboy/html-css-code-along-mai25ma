@@ -12,3 +12,19 @@ main article {
     display: block;
   }
 }
+
+/* Mark active choice in menu */
+body {
+
+  &:not(:has(article:target)) nav a:nth-of-type(1),
+  &:has(article:nth-of-type(1):target) nav a:nth-of-type(1),
+  &:has(article:nth-of-type(2):target) nav a:nth-of-type(2),
+  &:has(article:nth-of-type(3):target) nav a:nth-of-type(3),
+  &:has(article:nth-of-type(4):target) nav a:nth-of-type(4),
+  &:has(article:nth-of-type(5):target) nav a:nth-of-type(5) {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 2px;
+  }
+}

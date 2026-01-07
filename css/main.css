@@ -4,8 +4,8 @@ main {
   width: min(900px, 100%);
   /* center the element using margin auto on left/right margin */
   margin: 0 auto;
-  /* always some space to the viewport edges */
-  padding: 20px;
+  /* add some space */
+  padding: 0 20px 20px;
 }
 
 /*

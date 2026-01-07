@@ -1,0 +1,44 @@
+/*
+  Placeholder Lorem Ipsum
+  usage example: <p class="lorem1"><p class="lorem5">, <li class="lorem"> etc...
+*/
+
+.lorem1::before {
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Praesent placerat magna non sem pulvinar, sed feugiat diam scelerisque.";
+}
+
+.lorem2::before {
+  content: "Nullam ac erat ante. Donec porta diam eu massa rhoncus, nec hendrerit magna efficitur. Curabitur sed leo id libero sodales efficitur.";
+}
+
+.lorem3::before {
+  content: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris quis efficitur justo, at varius enim. Curabitur pretium tincidunt lacus, ut interdum velit. In hac habitasse platea dictumst.";
+}
+
+.lorem4::before {
+  content: "Sed auctor, urna ut feugiat convallis, ante sem tempus lectus, sit amet scelerisque purus enim a purus. Nullam a finibus eros.";
+}
+
+.lorem5::before {
+  content: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum. Proin sodales pulvinar tempor.";
+}
+
+.lorem6::before {
+  content: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.";
+}
+
+.lorem7::before {
+  content: "Phasellus interdum eros nec sapien varius, vel tempor dui dictum. Integer sit amet risus eu purus tristique tincidunt nec vel sem. Suspendisse potenti. Nam pretium turpis et arcu sodales, nec fringilla urna tincidunt.";
+}
+
+.lorem8::before {
+  content: "Aenean elementum, neque at sollicitudin elementum, eros dui hendrerit felis, vitae eleifend leo tellus nec nisi. Aliquam at varius enim.";
+}
+
+.lorem9::before {
+  content: "Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.";
+}
+
+.lorem10::before {
+  content: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada.";
+}
