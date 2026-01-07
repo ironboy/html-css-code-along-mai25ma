@@ -1,0 +1,10 @@
+/* Box sizing - count padding and borders as part of widths */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
