@@ -1,0 +1,17 @@
+footer {
+  background-color: rgb(61, 2, 2);
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Sticky footer logic */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

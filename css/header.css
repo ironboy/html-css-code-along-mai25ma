@@ -1,0 +1,29 @@
+header {
+  background-color: rgb(61, 2, 2);
+  padding: 20px;
+
+  nav {
+
+    /* float fix make a elements in nav
+       that have float still take up space */
+    display: flow-root;
+
+    a {
+      text-decoration: none;
+      color: rgb(209, 209, 209);
+      display: block;
+      float: left;
+      padding: 0 20px;
+
+      &:first-child {
+        padding-left: 0
+      }
+
+      &:last-child {
+        padding-right: 0
+      }
+    }
+
+  }
+
+}

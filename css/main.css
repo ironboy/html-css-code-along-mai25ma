@@ -1,0 +1,20 @@
+main {
+  /* set the width to what's smallest of
+     100% of parent (body) width - same as viewport -  or 900px */
+  width: min(900px, 100%);
+  /* center the element using margin auto on left/right margin */
+  margin: 0 auto;
+  /* always some space to the viewport edges */
+  padding: 20px;
+}
+
+/*
+  shorthand for margin and padding...
+  instead of writing separate margin-top, margin-left
+
+  padding: 20px (all sides)
+  padding:  10px 20px (top/bottom ,left/right)
+  padding: 10px 20px 15px (top, left/right, bottom)
+  padding: 10px 15px 20px 25px (top, right, bottom, left)
+
+*/

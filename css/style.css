@@ -4,9 +4,3 @@
 @import 'header.css';
 @import 'main.css';
 @import 'footer.css';
-
-h1 {
-  border: 1px solid #9e4747;
-  padding: 20px;
-  margin: 20px;
-}
