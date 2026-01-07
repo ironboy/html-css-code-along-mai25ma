@@ -1,5 +1,25 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
 body {
-  background-color: #ddd
+  background-color: #ddd;
+  color: #333;
+  font-family: 'Dm Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fraunces';
+}
+
+.logo {
+  font-family: 'Delius';
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 /* "Router": Which article in main to show depending on hash */
