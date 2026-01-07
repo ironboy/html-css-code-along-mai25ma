@@ -1,0 +1,14 @@
+/* "Router": Which article in main to show depending on hash */
+main article {
+
+  /* Scroll to top instead of article */
+  scroll-margin-top: 200px;
+
+  display: none;
+
+  /* Show first page by default OR the targeted page */
+  &:first-of-type:not(:has(~ :target)),
+  &:target {
+    display: block;
+  }
+}
