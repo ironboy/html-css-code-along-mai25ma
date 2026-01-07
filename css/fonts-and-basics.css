@@ -8,6 +8,14 @@ body {
   margin: 0;
   line-height: 140%;
   font-size: 20px;
+  /* when we use 100vw for elements (like we do for hero images)
+     that is including the vertical scroll-bar which means
+     the page doesn't fit horisontally and gets a horizontal scrollbar...
+     we fix this by hiding the horizontal overflow -
+     (this hides around 17px of the image but that's mostly undetectable)
+     - no more horizontal scrollbar!
+  */
+  overflow-x: hidden;
 }
 
 h1,
