@@ -1,8 +1,27 @@
 footer {
   background-color: rgb(61, 2, 2);
-  padding: 40px;
+  padding: 40px 80px;
   color: white;
-  text-align: center;
+
+  /* child elements (in this sections)
+     to the footer should be displayed
+     side by side with equal spacing between them */
+  display: flex;
+  justify-content: space-between;
+
+  section {
+    p {
+      margin: 0;
+
+      &.space-before {
+        margin-top: 10px;
+      }
+    }
+
+    a {
+      color: #fff;
+    }
+  }
 }
 
 /* Sticky footer logic */
