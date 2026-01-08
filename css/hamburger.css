@@ -17,6 +17,8 @@
 
 header {
 
+  position: relative;
+
   /* Hide the checkbox (always) */
   #menu-toggle {
     display: none;
