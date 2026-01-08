@@ -1,9 +1,9 @@
 @import 'box-sizing.css';
 @import 'fonts-and-basics.css';
 @import 'spa-routing.css';
+@import 'main.css';
 @import 'header.css';
 @import 'hamburger.css';
-@import 'main.css';
 @import 'footer.css';
 @import 'images.css';
 @import 'lorem.css';

@@ -1,6 +1,26 @@
+/* compensate for header fixed (hiding parts of main)
+   by adding padding-top to main 
+*/
+main {
+  padding-top: 106px;
+
+  @media (max-width: 575px) {
+    padding-top: 68px;
+  }
+}
+
+
 header {
+
+  position: fixed;
+  /* width 100% is default for position:static but not for other position values */
+  width: 100%;
+
   background-color: rgb(61, 2, 2);
   padding: 20px;
+
+  /* don't let the header disappear on scroll
+     let it be fixed */
 
   nav {
 
