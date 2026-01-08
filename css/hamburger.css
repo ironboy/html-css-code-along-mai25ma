@@ -1,0 +1,76 @@
+/* CSS-only hamburger menu using the "checkbox hack"
+
+   How it works:
+   - A hidden checkbox + a label (the ☰ icon) that toggles it
+   - Clicking the label toggles the checkbox
+   - CSS detects :checked state with #menu-toggle:checked ~ nav
+   - The ~ sibling selector shows nav when checkbox is checked
+   - No JavaScript needed!
+
+   Note: header needs position: relative for the absolute nav to work
+   (since absolute elements are positioned relative to the closest non-static elements
+    [absolute/relative/fixed] etc)
+
+   Note: Without JS we can't close on click,
+   the user needs to click the hamburger again to close the menu...
+*/
+
+header {
+
+  /* Hide the checkbox (always) */
+  #menu-toggle {
+    display: none;
+
+    /* Show nav when checkbox is checked (sibling selector) */
+    &:checked~nav {
+      display: block;
+    }
+  }
+
+  /* The hamburger icon - hidden by default (large screens) */
+  label[for="menu-toggle"] {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    padding: 3px 7px 7px;
+  }
+
+  /* Small screens: show hamburger, hide menu */
+  @media (max-width: 575px) {
+
+    & {
+      padding-bottom: 10px;
+    }
+
+    /* Show the hamburger icon */
+    label[for="menu-toggle"] {
+      display: block;
+    }
+
+    /* Hide the nav by default */
+    nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      margin-top: -10px;
+      left: 0;
+      right: 0;
+      background-color: rgb(61, 2, 2);
+      padding: 20px;
+
+      /* Stack the links vertically */
+      a {
+        float: none;
+        padding: 10px 0;
+      }
+    }
+
+  }
+
+}

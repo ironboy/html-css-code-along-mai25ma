@@ -1,6 +1,7 @@
 header {
   background-color: rgb(61, 2, 2);
   padding: 20px;
+  position: relative;
 
   nav {
 
