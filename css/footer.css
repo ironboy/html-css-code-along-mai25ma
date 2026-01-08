@@ -6,10 +6,35 @@ footer {
   /* child elements (in this sections)
      to the footer should be displayed
      side by side with equal spacing between them */
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width:650px) {
+    /*display: flex;
+    justify-content: space-between;*/
+
+    /* this does exactly the same as the 
+       flex rules we commented out
+       - some people prefer to not use flex anymore
+         since grid is more powerful - one syntax for all 
+         spacing problems 
+    */
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+  }
 
   section {
+
+    &:not(:first-child) {
+      @media screen and (max-width:649.98px) {
+        h3 {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    h3 {
+      margin: 0;
+    }
+
     p {
       margin: 0;
 
@@ -20,7 +45,19 @@ footer {
 
     a {
       color: #fff;
+
+      &:hover {
+        color: #ddd;
+      }
     }
+
+    /* hide the last section/column if less than 900 px wide */
+    &:last-child {
+      @media screen and (max-width:899px) {
+        display: none;
+      }
+    }
+
   }
 }
 
