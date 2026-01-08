@@ -15,13 +15,21 @@ header {
       float: left;
       padding: 0 20px;
 
+      /* if I am the first element in the nav (the first child) */
       &:first-child {
         padding-left: 0
       }
 
+      /* if I am the last element in the nav (the last child) */
       &:last-child {
         padding-right: 0
       }
+
+      /* if the user hovers with their mouse pointer over me */
+      &:hover {
+        color: white;
+      }
+
     }
 
   }
