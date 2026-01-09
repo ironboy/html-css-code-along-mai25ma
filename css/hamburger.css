@@ -13,6 +13,14 @@
 
    Note: Without JS we can't close on click,
    the user needs to click the hamburger again to close the menu...
+
+   We can cheat and add a inline-js oneliner in the HTML though:
+
+    <!-- Checkbox hack for CSS-only hamburger menu -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle">☰</label>
+    <!-- Small JS event handler that closes the menu -->
+    <nav onclick="document.querySelector('#menu-toggle').checked = false">
 */
 
 header {
