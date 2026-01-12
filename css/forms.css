@@ -1,9 +1,34 @@
-input,
-textarea,
-select,
-button {
-  font: inherit;
-  /* not needed in our case but common
+  input,
+  textarea,
+  select,
+  button {
+    font: inherit;
+    /* not needed in our case but common
      since we set box-sizing on all elements too */
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
+
+  label:not(label[for="menu-toggle"]) {
+    margin-bottom: 15px;
+  }
+
+  label:not([for="menu-toggle"]),
+  input:not([type="checkbox"], [type="radio"]),
+  textarea {
+    display: block;
+    width: 100%;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  button[type="submit"] {
+    /* inline-start och inline-end depending
+       ltr/rtl language */
+    float: inline-end;
+    padding: 2px 30px;
+    /* set a pointer (a hand) as cursor
+       when the users hovers the button */
+    cursor: pointer;
+  }

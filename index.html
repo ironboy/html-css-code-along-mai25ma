@@ -62,7 +62,7 @@
       <h1>Contact us</h1>
       <form>
         <label>E-mail:
-          <input type="email" name="email" required>
+          <input type="email" name="email" placeholder="Write your email-address here" required>
         </label>
         <label>First name:
           <input type="text" name="firstName" required>
@@ -70,8 +70,32 @@
         <label>Last name:
           <input type="text" name="lastName" required>
         </label>
+        <label>Subject:
+          <select>
+            <option>Question</option>
+            <option>Opinion</option>
+            <option>Suggestion for improvement</option>
+          </select>
+        </label>
         <label>Your question/opinion:
           <textarea name="question" required minlength="5"></textarea>
+        </label>
+        <section>
+          Is it alright that we phone you?
+          <!-- Important: Use the name attribute to group
+               a number of radio buttons together -->
+          <!-- required one any of the radio buttons in the same group
+               is enough to make the choice wihtin in the group required
+          -->
+          <label>
+            <input type="radio" name="phoneOk" value="yes" required> Yes
+          </label>
+          <label>
+            <input type="radio" name="phoneOk" value="no"> No
+          </label>
+        </section>
+        <label>
+          <input type="checkbox" checked> Subscribe to our newsletter
         </label>
         <button type="submit">Skicka</button>
       </form>

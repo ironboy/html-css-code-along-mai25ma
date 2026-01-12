@@ -8,5 +8,6 @@ html {
 *,
 *:before,
 *:after {
+  font-family: 'DM Sans';
   box-sizing: inherit;
 }
