@@ -1,0 +1,9 @@
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  /* not needed in our case but common
+     since we set box-sizing on all elements too */
+  box-sizing: border-box;
+}

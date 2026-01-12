@@ -1,4 +1,6 @@
-/* Box sizing - count padding and borders as part of widths */
+/* Box sizing - count padding and borders as part of widths
+   read more: https: //css-tricks.com/box-sizing
+*/
 html {
   box-sizing: border-box;
 }
