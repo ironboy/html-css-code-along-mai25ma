@@ -72,7 +72,7 @@ header {
       margin-top: -10px;
       left: 0;
       right: 0;
-      background-color: rgb(61, 2, 2);
+      background-color: var(--header-footer-background);
       padding: 20px;
 
       /* Stack the links vertically */

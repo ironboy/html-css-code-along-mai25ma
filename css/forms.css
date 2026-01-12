@@ -9,7 +9,7 @@
   }
 
   label:not(label[for="menu-toggle"]) {
-    margin-bottom: 15px;
+    margin-bottom: var(--margin-bottom-form-elements);
   }
 
   label:not([for="menu-toggle"]),
@@ -43,7 +43,7 @@
       display: inline;
     }
 
-    margin-bottom: 15px;
+    margin-bottom: var(--margin-bottom-form-elements);
   }
 
   /* ---------------------------------------------------

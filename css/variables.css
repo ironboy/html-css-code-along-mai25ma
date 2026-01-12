@@ -1,0 +1,6 @@
+/* :root the root element, normally the html element */
+:root {
+  /* Declare a CSS variables / custom property */
+  --header-footer-background: rgb(61, 2, 2);
+  --margin-bottom-form-elements: 15px;
+}

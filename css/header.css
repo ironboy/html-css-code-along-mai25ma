@@ -1,5 +1,5 @@
 /* compensate for header fixed (hiding parts of main)
-   by adding padding-top to main 
+   by adding padding-top to main
 */
 main {
   padding-top: 106px;
@@ -16,7 +16,7 @@ header {
   /* width 100% is default for position:static but not for other position values */
   width: 100%;
 
-  background-color: rgb(61, 2, 2);
+  background-color: var(--header-footer-background);
   padding: 20px;
 
   /* don't let the header disappear on scroll

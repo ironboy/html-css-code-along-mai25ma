@@ -1,5 +1,5 @@
 footer {
-  background-color: rgb(61, 2, 2);
+  background-color: var(--header-footer-background);
   padding: 40px 80px;
   color: white;
 
@@ -10,11 +10,11 @@ footer {
     /*display: flex;
     justify-content: space-between;*/
 
-    /* this does exactly the same as the 
+    /* this does exactly the same as the
        flex rules we commented out
        - some people prefer to not use flex anymore
-         since grid is more powerful - one syntax for all 
-         spacing problems 
+         since grid is more powerful - one syntax for all
+         spacing problems
     */
     display: grid;
     grid-template-columns: repeat(3, auto);
