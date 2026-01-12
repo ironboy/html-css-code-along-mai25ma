@@ -20,6 +20,8 @@
   }
 
   textarea {
+    /* If you want to prevent user-based resize */
+    /*resize: none;*/
     height: 100px;
   }
 
@@ -31,4 +33,49 @@
     /* set a pointer (a hand) as cursor
        when the users hovers the button */
     cursor: pointer;
+  }
+
+  /* Let labels be on the same line as their radio button
+     in a group of radio buttons */
+
+  .radio-button-group {
+    label {
+      display: inline;
+    }
+
+    margin-bottom: 15px;
+  }
+
+  /* ---------------------------------------------------
+     Nice to have / style more evenly between browsers
+     ---------------------------------------------------*/
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  textarea,
+  select {
+    padding: 0.2em 0.75em;
+    border: 1px solid #888;
+    border-radius: 4px;
+  }
+
+  /* Better sizing and control over color
+     but not in Safari */
+  input[type="checkbox"],
+  input[type="radio"] {
+    accent-color: #0066cc;
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  /* Focus */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: 2px solid #0066cc;
   }
