@@ -60,7 +60,7 @@
     </article>
     <article id="contact-us">
       <h1>Contact us</h1>
-      <form>
+      <form name="contactForm">
         <label>E-mail:
           <input type="email" name="email" placeholder="Write your email-address here" required>
         </label>
@@ -71,7 +71,7 @@
           <input type="text" name="lastName" required>
         </label>
         <label>Subject:
-          <select>
+          <select name="subject">
             <option>Question</option>
             <option>Opinion</option>
             <option>Suggestion for improvement</option>
@@ -95,7 +95,7 @@
           </label>
         </section>
         <label>
-          <input type="checkbox" checked> Subscribe to our newsletter
+          <input type="checkbox" name="newsSubscribe" checked> Subscribe to our newsletter
         </label>
         <button type="submit">Skicka</button>
       </form>
